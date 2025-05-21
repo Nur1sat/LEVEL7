@@ -28,7 +28,8 @@ let something = {
         }
     }
 }
-function create_new_student() {
+function create_new_student(event) {
+    event.preventDefault();
     let name = document.getElementById("name").value.trim();
     let grade = document.getElementById("grade").value.trim();
     let student_id = document.getElementById("student_id").value.trim();
